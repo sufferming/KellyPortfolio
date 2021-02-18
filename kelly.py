@@ -30,7 +30,7 @@ def load_prices(config:Dict)->pd.DataFrame:
     else:
         stock_symbols, crypto_symbols = [], []
         start_date = (datetime.datetime.today()
-                      - datetime.timedelta(days=365*config['max_lookback_years'])).date()
+                      - datetime.timedelta(days=round(365*config['max_lookback_years']))).date()
         end_date = datetime.datetime.today().date() - datetime.timedelta(days=1)
         try:
             if 'stock_symbols' in config['assets'].keys():

@@ -1,12 +1,12 @@
 {
     "assets": 
     {
-        "stock_symbols": ["EWJ", "IXN", "MCHI", "HYXU", "FREL"]
-
+        "stock_symbols": ["SPY", "TLT", "XOM", "QQQ", "ZM"],
+        "crypto_symbols": ["BTC-USD", "ETH-USD"]
     },
-    "kelly_fraction": 0.8,
-    "max_lookback_years": 1,
-    "annual_risk_free_rate": 0.003,
+    "kelly_fraction": 0.15,
+    "max_lookback_years": 5,
+    "annual_risk_free_rate": 0.008,
     "identical_annual_excess_return_rate": 0.03,
     "use_Ledoit_Wolf": true,
     "max_position_size": 0.99,
